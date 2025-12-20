@@ -54,6 +54,9 @@ export default function ThemePage() {
             <p className="text-base leading-relaxed">
             Aenean vitae laoreet nisi. Nunc id fringilla eros. Sed egestas mauris sit amet arcu vestibulum blandit. Curabitur gravida dui vel purus tempus malesuada. Phasellus at mi ut tellus lobortis lobortis. Aliquam nec lectus at ex laoreet posuere. Quisque interdum nisi non orci luctus dictum. This is the default body text size used for most content throughout the application.
             </p>
+            <p className="text-muted leading-relaxed">
+            Aenean vitae laoreet nisi. Nunc id fringilla eros. Sed egestas mauris sit amet arcu vestibulum blandit. Curabitur gravida dui vel purus tempus malesuada. Phasellus at mi ut tellus lobortis lobortis. Aliquam nec lectus at ex laoreet posuere. Quisque interdum nisi non orci luctus dictum. This is the default body text size used for most content throughout the application.
+            </p>
           </div>
           <div className="flex items-start gap-4">
             <span className="text-xs text-zinc-600 min-w-[40px] pt-1">SM</span>
