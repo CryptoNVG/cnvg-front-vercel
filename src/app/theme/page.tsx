@@ -4,6 +4,10 @@ import { Section } from "@/components/layout/Section";
 export default function ThemePage() {
   return (
     <main className="min-h-screen">
+      <Section title="Blocks">
+        <div className="bg-card w-full h-96 mb-12 rounded-3xl"></div>
+      </Section>
+     
       {/* Typography */}
       
       <Section 
