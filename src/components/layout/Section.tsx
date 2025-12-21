@@ -19,12 +19,12 @@ export function Section({ title, description, url, children, className = "", id 
           <div id="section-title" className="flex flex-col gap-2 px-4 md:px-6 pb-6">
             <h2 className="tracking-wider max-w-2/3">
               {url ? (
-                <a href={url} className="group inline-flex items-center gap-1 hover:gap-2 duration-600 transition-all font-bold">
+                <a href={url} className="group inline-flex items-center gap-1 transition-all duration-600 font-bold">
                   {title}
                   <CaretRight 
-                    size={24} 
+                    size={16} 
                     weight="bold" 
-                    className="text-muted group-hover:text-button-text-hover transition-colors"
+                    className="text-muted translate-y-1 group-hover:text-button-text-hover group-hover:translate-x-[4px] transition-all duration-600"
                   />
                 </a>
               ) : title}
