@@ -1,12 +1,23 @@
 import { Button } from "@/components/ui/Button";
 import { Section } from "@/components/layout/Section";
+import { SectionHero } from "@/components/layout/SectionHero";
 import { CardSimple } from "@/components/ui/CardSimple";
 import { Icon } from "@/components/ui/Icon";
 import { SectionBreadcrumbs, MOCK_BREADCRUMBS } from "@/components/layout/SectionBreadcrumbs";
 
 export default function ThemePage() {
   return (
-    <main className="min-h-screen">
+    <>
+      {/* Section: Hero */}
+      <SectionHero
+        breadcrumbs={MOCK_BREADCRUMBS.simpleData}
+        title="Theme Components"
+        description="This page showcases all the UI components and design tokens available in the design system."
+        buttonLabel="Add New"
+        buttonUrl="/exchange/add"
+        buttonColor="pink"
+        buttonIcon="Bell"
+      />
 
       {/* Section: Breadcrumbs */}
 
@@ -528,6 +539,6 @@ export default function ThemePage() {
         </div>
       </Section>
       
-    </main>
+    </>
   );
 }

@@ -57,9 +57,14 @@ export const MOCK_BREADCRUMBS: Record<string, BreadcrumbItem[]> = {
     { label: "Support", href: "/support" },
     { label: "Contact Form", href: "/support/contact-form" },
   ],
+  simpleData: [
+    { label: "Home", href: "/" },
+    { label: "Page 2", href: "/#" },
+    { label: "Page 3", href: "/#" },
+  ],
 };
 
-const MAX_LABEL_LENGTH = 30;
+const MAX_LABEL_LENGTH = 20;
 
 function truncateLabel(label: string): string {
   if (label.length <= MAX_LABEL_LENGTH) return label;
