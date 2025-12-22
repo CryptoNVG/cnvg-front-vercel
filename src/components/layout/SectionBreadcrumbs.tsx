@@ -59,7 +59,7 @@ export const MOCK_BREADCRUMBS: Record<string, BreadcrumbItem[]> = {
   ],
 };
 
-const MAX_LABEL_LENGTH = 40;
+const MAX_LABEL_LENGTH = 30;
 
 function truncateLabel(label: string): string {
   if (label.length <= MAX_LABEL_LENGTH) return label;
