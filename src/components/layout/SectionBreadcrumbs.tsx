@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { Icon } from "./Icon";
+import { Icon } from "../ui/Icon";
 
 export interface BreadcrumbItem {
   label: string;
   href?: string;
 }
 
-interface BreadcrumbsProps {
+interface SectionBreadcrumbsProps {
   items: BreadcrumbItem[];
   className?: string;
 }
@@ -18,7 +18,7 @@ export const MOCK_BREADCRUMBS: Record<string, BreadcrumbItem[]> = {
     { label: "Exchange", href: "/exchange" },
     { label: "Ukraine", href: "/exchange/ukraine" },
     { label: "Kyiv", href: "/exchange/ukraine/kyiv" },
-    { label: "CryptoExchange Pro Super Long Label That Should Be Truncated" },
+    { label: "CryptoExchange Pro Disabled Long Label That Should Be Truncated" },
   ],
   atmProfile: [
     { label: "Home", href: "/" },
@@ -66,7 +66,7 @@ function truncateLabel(label: string): string {
   return label.slice(0, MAX_LABEL_LENGTH) + "...";
 }
 
-export function Breadcrumbs({ items, className = "" }: BreadcrumbsProps) {
+export function SectionBreadcrumbs({ items, className = "" }: SectionBreadcrumbsProps) {
   if (!items || items.length === 0) return null;
 
   return (
@@ -117,5 +117,5 @@ export function Breadcrumbs({ items, className = "" }: BreadcrumbsProps) {
   );
 }
 
-export default Breadcrumbs;
+export default SectionBreadcrumbs;
 

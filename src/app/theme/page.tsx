@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/Button";
 import { Section } from "@/components/layout/Section";
 import { CardSimple } from "@/components/ui/CardSimple";
 import { Icon } from "@/components/ui/Icon";
-import { Breadcrumbs, MOCK_BREADCRUMBS } from "@/components/ui/Breadcrumbs";
+import { SectionBreadcrumbs, MOCK_BREADCRUMBS } from "@/components/layout/SectionBreadcrumbs";
 
 export default function ThemePage() {
   return (
@@ -16,7 +16,7 @@ export default function ThemePage() {
           <div className="mb-8">
             <h3 className="text-xs text-zinc-600 mb-2">Exchange Profile</h3>
             <div className="rounded-2xl border-[1px] border-zinc-900">
-              <Breadcrumbs items={MOCK_BREADCRUMBS.exchangeProfile} />
+              <SectionBreadcrumbs items={MOCK_BREADCRUMBS.exchangeProfile} />
             </div>
           </div>
 
@@ -24,7 +24,7 @@ export default function ThemePage() {
           <div className="mb-8">
             <h3 className="text-xs text-zinc-600 mb-2">ATM Profile</h3>
             <div className="rounded-2xl border-[1px] border-zinc-900">
-              <Breadcrumbs items={MOCK_BREADCRUMBS.atmProfile} />
+              <SectionBreadcrumbs items={MOCK_BREADCRUMBS.atmProfile} />
             </div>
           </div>
 
@@ -32,7 +32,7 @@ export default function ThemePage() {
           <div className="mb-8">
             <h3 className="text-xs text-zinc-600 mb-2">Online Exchange</h3>
             <div className="rounded-2xl border-[1px] border-zinc-900">
-              <Breadcrumbs items={MOCK_BREADCRUMBS.onlineExchange} />
+              <SectionBreadcrumbs items={MOCK_BREADCRUMBS.onlineExchange} />
             </div>
           </div>
 
@@ -40,7 +40,7 @@ export default function ThemePage() {
           <div className="mb-8">
             <h3 className="text-xs text-zinc-600 mb-2">Blog Article</h3>
             <div className="rounded-2xl border-[1px] border-zinc-900">
-              <Breadcrumbs items={MOCK_BREADCRUMBS.blogArticle} />
+              <SectionBreadcrumbs items={MOCK_BREADCRUMBS.blogArticle} />
             </div>
           </div>
 
@@ -48,7 +48,7 @@ export default function ThemePage() {
           <div className="mb-8">
             <h3 className="text-xs text-zinc-600 mb-2">Event</h3>
             <div className="rounded-2xl border-[1px] border-zinc-900">
-              <Breadcrumbs items={MOCK_BREADCRUMBS.event} />
+              <SectionBreadcrumbs items={MOCK_BREADCRUMBS.event} />
             </div>
           </div>
 
@@ -56,7 +56,7 @@ export default function ThemePage() {
           <div className="mb-8">
             <h3 className="text-xs text-zinc-600 mb-2">Ads / Service</h3>
             <div className="rounded-2xl border-[1px] border-zinc-900">
-              <Breadcrumbs items={MOCK_BREADCRUMBS.ads} />
+              <SectionBreadcrumbs items={MOCK_BREADCRUMBS.ads} />
             </div>
           </div>
 
@@ -64,7 +64,7 @@ export default function ThemePage() {
           <div className="mb-8">
             <h3 className="text-xs text-zinc-600 mb-2">Support / FAQ / Article</h3>
             <div className="rounded-2xl border-[1px] border-zinc-900">
-              <Breadcrumbs items={MOCK_BREADCRUMBS.faqArticle} />
+              <SectionBreadcrumbs items={MOCK_BREADCRUMBS.faqArticle} />
             </div>
           </div>
 
@@ -72,7 +72,7 @@ export default function ThemePage() {
           <div className="mb-8">
             <h3 className="text-xs text-zinc-600 mb-2">Support / Contact Form</h3>
             <div className="rounded-2xl border-[1px] border-zinc-900">
-              <Breadcrumbs items={MOCK_BREADCRUMBS.contactForm} />
+              <SectionBreadcrumbs items={MOCK_BREADCRUMBS.contactForm} />
             </div>
           </div>
         </div>
